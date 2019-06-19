@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PortableAppManager"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="450" Width="1020" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" Background="{x:Null}" ShowInTaskbar="False" Deactivated="Window_Deactivated" Topmost="True" Foreground="{x:Null}">
+
+    <Border CornerRadius="20,20,20,20" BorderBrush="#FF252525" BorderThickness="10,10,10,10">
+        <Grid Background="#FF252525">
+            <ScrollViewer VerticalScrollBarVisibility="Hidden" Foreground="#FF252525">
+                <WrapPanel Name="MainWP" Background="#FF252525" ItemHeight="200" ItemWidth="200" ScrollViewer.CanContentScroll="True" />
+            </ScrollViewer>
+        </Grid>
+    </Border>
+
 </Window>
